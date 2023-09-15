@@ -1,13 +1,12 @@
 import './Perfil.css';
-import Eco from '../../imagens/eco.jpg';
 
-function Perfil(){
+
+export default function Perfil(props){
     return(
         <div className='Card'>
-            <div className='Img'> <a href="https://www.google.com.br"> <img src={Eco} alt='imagens'/></a></div>
-            <h3 className='Titulo'>Quero Doar</h3>
-            <p className='Texto'>tesyutgjdkfklfjlf</p>            
+            <div className='Img'> <a href="/contact"> <img src={props.imagem} alt='imagens'/></a></div>
+            <h3 className='Titulo'>{props.titulo}</h3>
+            <p className='Texto'>{props.texto}</p>            
         </div>
     );
 }
-export default Perfil;

@@ -1,0 +1,19 @@
+.Home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    margin: 20px;
+    
+    
+}
+
+img{
+    max-width: 950px;
+}
+
+.Perfis{
+    display: flex;
+    gap: 20px;
+}
