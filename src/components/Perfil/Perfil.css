@@ -1,0 +1,31 @@
+.Card{
+    display: flex;
+    flex-direction: column;    
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    width: 250px;
+    height: 350px;
+    padding: 10px;
+    
+   
+}
+
+.Img{
+    border: 1px black solid;
+    max-width: 100%;
+    height: 200px;
+    
+    
+}
+
+.Card .Img img{
+    position: static
+}
+
+.Titulo{
+    margin-top: 5px;
+
+}
+.Texto{
+    margin-top: 5px;
+}
