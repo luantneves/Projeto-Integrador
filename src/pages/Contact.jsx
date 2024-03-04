@@ -18,6 +18,15 @@ export default function Contact(){
                         <input type="text" placeholder='Telefone'/>
                         <input type="text" placeholder='CEP'/>
                         <textarea name="" id="" cols="30" rows="10" placeholder='Descreva os materiais que deseja doar e anexe imagens. Podemos entrar em contato para entender melhor e agendar o melhor horário e local para retirada.'></textarea>
+                        <select name="materiais" id="">
+                            <option value="">Eletrônicos</option>
+                            <option value="">Móveis</option>
+                            <option value="">Papel / Papelão</option>
+                            <option value="">Plástico</option>
+                            <option value="">Vidro</option>
+                            <option value="">Óleo de cozinha</option>
+                            <option value="">Pneus</option>                            
+                        </select>
                         <div>
                             <label>Anexos:</label>
                             <input type="file"/>
