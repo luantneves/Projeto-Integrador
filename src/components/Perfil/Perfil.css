@@ -10,6 +10,10 @@
    
 }
 
+.Card:hover{
+    border: 5px rgb(0, 0, 0) solid;
+}
+
 .Img{
    
     max-width: 100%;
@@ -40,3 +44,4 @@
     margin-top: 5px;
     font-size: 1.2rem;
 }
+

@@ -46,3 +46,9 @@ button{
 button:hover{
     cursor: pointer;
 }
+
+select{
+    height: 50px;
+    font-size: 1.2rem;
+    width: 350px;
+}
