@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import './Contact.css';
+import axios from 'axios';
 
 export default function Contact(){
 
@@ -13,9 +14,22 @@ export default function Contact(){
     
 
     function sendform(e){
+
         e.preventDefault();
-        alert("Solicitação enviada com sucesso!");
-        console.log({name, email, fone, cep, descricao, material, image})
+        
+        const json = JSON.stringify({name: name, email: email, phoneNumber : fone, cep : cep, comments : descricao, materialType : material, photo: image});
+        
+        axios.post('https://localhost:7288/Contact', json, {
+            headers: {
+                'Content-Type' : 'application/json'
+            }
+        }).then(function (response){            
+            alert("Solicitação enviada com sucesso!");
+        })
+        .catch(function(error){            
+            alert("Erro ao criar solicitação.")
+            console.log(error);            
+        });
     }
 
     return (
